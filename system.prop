@@ -10,6 +10,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.dpm.feature=9
 
+# Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.cpurend.vsync=false \
+
 # IMS
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.dbg.volte_avail_ovr=1 \
