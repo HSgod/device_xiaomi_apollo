@@ -172,6 +172,7 @@ PRODUCT_HOST_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    WifiOverlay \
     XiaomiBluetooth \
     XiaomiFrameworks \
     XiaomiSystemUI
