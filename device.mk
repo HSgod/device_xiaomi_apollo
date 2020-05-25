@@ -23,6 +23,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Inherit proprietary vendor
 $(call inherit-product, vendor/xiaomi/apollo/apollo-vendor.mk)
 
+-include $(LOCAL_PATH)/system.prop
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
@@ -39,6 +41,10 @@ AB_OTA_UPDATER := false
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbluetooth_qti
 
 # fastbootd
 PRODUCT_PACKAGES += \
