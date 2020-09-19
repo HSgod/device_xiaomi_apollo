@@ -148,7 +148,8 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/xiaomi/apollo
+    device/xiaomi/apollo \
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 
 # NFC
 PRODUCT_PACKAGES += \
