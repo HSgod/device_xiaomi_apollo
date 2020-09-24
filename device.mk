@@ -23,6 +23,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-streak
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
@@ -38,3 +42,9 @@ PRODUCT_COPY_FILES += \
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/apollo
+
+# Overlays
+PRODUCT_PACKAGES += \
+    XiaomiBluetooth \
+    XiaomiFrameworks \
+    XiaomiSystemUI
