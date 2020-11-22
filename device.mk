@@ -52,6 +52,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/apollo
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service \
+    com.android.nfc_extras \
+    com.gsma.services.nfc \
+    NfcNci \
+    Tag \
+    SecureElement
+
 # Overlays
 PRODUCT_PACKAGES += \
     XiaomiBluetooth \
