@@ -33,6 +33,9 @@ PRODUCT_TARGET_VNDK_VERSION := 29
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-streak
 
+# A/B
+AB_OTA_UPDATER := false
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
