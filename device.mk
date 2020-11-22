@@ -23,6 +23,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
