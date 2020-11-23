@@ -23,8 +23,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Inherit proprietary vendor
 $(call inherit-product, vendor/xiaomi/apollo/apollo-vendor.mk)
 
--include $(LOCAL_PATH)/product.prop
--include $(LOCAL_PATH)/system.prop
+-include $(LOCAL_PATH)/system_prop.mk
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29

@@ -2,6 +2,11 @@
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.bluetooth.library_name=libbluetooth_qti.so
 
+# Blur
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.sf.blurs_are_expensive=1 \
+    ro.surface_flinger.supports_background_blur=1
+
 # CNE
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.cne.feature=1
@@ -29,6 +34,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.data.iwlan.enable=true \
     ro.vendor.use_data_netmgrd=true \
     persist.vendor.data.mode=concurrent
+
+# Recorder
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.audio.fluence.voicerec=true \
+    persist.vendor.audio.fluence.audiorec=true
 
 # Surfaceflinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
