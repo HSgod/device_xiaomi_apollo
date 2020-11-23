@@ -72,6 +72,9 @@ TARGET_BOOTLOADER_BOARD_NAME := apollo
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
