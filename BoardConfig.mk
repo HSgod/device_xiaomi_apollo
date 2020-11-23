@@ -70,6 +70,9 @@ TARGET_BOOTLOADER_BOARD_NAME := apollo
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# HIDL
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
