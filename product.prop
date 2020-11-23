@@ -8,6 +8,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.audio.fluence.voicerec=true \
     persist.vendor.audio.fluence.audiorec=true
 
+# Priv-app permission
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.control_privapp_permissions=log
+
 # Telephony
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=22,22 \
