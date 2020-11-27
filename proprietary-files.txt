@@ -3,6 +3,24 @@
 -product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk|abd5ea62af471a19a51096702a5681088a4c19c3
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|714382db8d12aca9f5388dd72060e867e30d88e4
 
+# IMS
+-product/priv-app/ims/ims.apk
+product/lib64/libdiag_system.so
+product/lib64/libimscamera_jni.so
+product/lib64/libimsmedia_jni.so
+product/lib64/lib-imsdpl.so
+product/lib64/lib-imsqimf.so
+product/lib64/lib-imsscmservice.so
+product/lib64/lib-imsrcs-v2.so
+product/lib64/lib-imsrcsbaseimpl.so
+product/lib64/lib-imsvideocodec.so
+product/lib64/lib-imsvtextutils.so
+product/lib64/lib-imsvt.so
+product/lib64/lib-imsvtcore.so
+product/lib64/lib-imsvtutils.so
+product/lib64/vendor.qti.imsrtpservice@2.0.so
+product/lib64/vendor.qti.imsrtpservice@2.1.so
+
 # Modules
 vendor/lib/modules/audio_adsp_loader.ko:product/vendor_overlay/29/lib/modules/audio_adsp_loader.ko
 vendor/lib/modules/audio_apr.ko:product/vendor_overlay/29/lib/modules/audio_apr.ko
@@ -49,3 +67,17 @@ vendor/lib/modules/rdbg.ko:product/vendor_overlay/29/lib/modules/rdbg.ko
 vendor/lib/modules/rmnet_perf.ko:product/vendor_overlay/29/lib/modules/rmnet_perf.ko
 vendor/lib/modules/rmnet_shs.ko:product/vendor_overlay/29/lib/modules/rmnet_shs.ko
 vendor/lib/modules/sla.ko:product/vendor_overlay/29/lib/modules/sla.ko
+
+# Telephony
+etc/permissions/privapp-permissions-qti.xml
+etc/permissions/qti_libpermissions.xml
+etc/permissions/qti_permissions.xml
+etc/sysconfig/qti_whitelist.xml
+-product/app/QtiTelephonyService/QtiTelephonyService.apk
+product/etc/permissions/qcrilhook.xml
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml
+product/etc/permissions/telephonyservice.xml
+product/framework/qcrilhook.jar
+product/framework/QtiTelephonyServicelibrary.jar
+product/framework/qti-telephony-common.jar
+-product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
