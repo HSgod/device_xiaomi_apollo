@@ -74,6 +74,13 @@ TARGET_BOOTLOADER_BOARD_NAME := apollo
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# Dex
+ifeq ($(HOST_OS),linux)
+  ifneq ($(TARGET_BUILD_VARIANT),eng)
+    WITH_DEXPREOPT ?= true
+  endif
+endif
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
