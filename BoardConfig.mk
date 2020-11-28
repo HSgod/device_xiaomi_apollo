@@ -84,6 +84,11 @@ endif
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
+# Hardware
+BOARD_USES_QCOM_HARDWARE := true
+QCOM_BOARD_PLATFORMS += kona
+TARGET_BOARD_PLATFORM := kona
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
