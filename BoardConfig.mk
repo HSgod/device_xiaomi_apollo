@@ -143,7 +143,7 @@ TARGET_COPY_OUT_PRODUCT := product
 BUILD_WITHOUT_VENDOR := true
 
 # Sepolicy
--include device/qcom/sepolicy/sepolicy.mk
+-include device/qcom/sepolicy_vndr/SEPolicy.mk
 SELINUX_IGNORE_NEVERALLOWS := true
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR := $(DEVICE_PATH)/sepolicy/private
