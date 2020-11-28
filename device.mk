@@ -103,7 +103,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    libbluetooth_qti
+    libbluetooth_qti \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
     libbthost_if \
@@ -124,7 +124,11 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     android.hardware.renderscript@1.0-impl \
+    libdisplayconfig \
     libgui_vendor \
+    libqdMetaData \
+    libqdMetaData.system \
+    libvulkan \
     vendor.display.config@1.0.vendor \
     vendor.display.config@1.1.vendor \
     vendor.display.config@1.2.vendor \
